@@ -11,6 +11,9 @@ struct LandmarkList: View {
     
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
+    @State var isAddModalSheetShown: Bool = false
+    @State var isSearchAlertShown: Bool = false
+    //    @State private var searchText = ""
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
@@ -22,8 +25,11 @@ struct LandmarkList: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites Only")
+                VStack {
+                    //                    SearchBar(text: $searchText)
+                    Toggle(isOn: $showFavoritesOnly) {
+                        Text("Favorites Only")
+                    }
                 }
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
@@ -32,6 +38,17 @@ struct LandmarkList: View {
                 }
             }
             .navigationTitle("Landmarks")
+            .navigationBarItems(leading: Button(action: { self.isSearchAlertShown = true}){Image(systemName: "magnifyingglass").font(.largeTitle)
+            }, trailing: Button(action: { self.isAddModalSheetShown = true}){Image(systemName: "plus").font(.largeTitle)
+            } )
+            .sheet(isPresented: $isAddModalSheetShown, content: {
+                VStack {
+                    Text("New Landmark")
+                }
+            })
+            .alert(isPresented: $isSearchAlertShown) {
+                Alert(title: Text("Important message"), message: Text("Needs Search Text Field"), dismissButton: .default(Text("Got it!")))
+            }
         }
     }
 }
