@@ -43,7 +43,7 @@ struct LandmarkList: View {
             } )
             .sheet(isPresented: $isAddModalSheetShown, content: {
                 VStack {
-                    Text("New Landmark")
+                    LandmarkNew()
                 }
             })
             .alert(isPresented: $isSearchAlertShown) {

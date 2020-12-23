@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5551EE2593FCFC00507423 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5551ED2593FCFC00507423 /* ProfileEditor.swift */; };
+		AD5551F12593FE0800507423 /* LandmarkNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5551F02593FE0800507423 /* LandmarkNew.swift */; };
 		AD61248925939DBD008BE835 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD61248825939DBD008BE835 /* ModelData.swift */; };
 		AD61248C25939EDE008BE835 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD61248B25939EDE008BE835 /* LandmarkRow.swift */; };
 		AD61248F2593A7E1008BE835 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD61248E2593A7E1008BE835 /* LandmarkList.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD5551ED2593FCFC00507423 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		AD5551F02593FE0800507423 /* LandmarkNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkNew.swift; sourceTree = "<group>"; };
 		AD61248825939DBD008BE835 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AD61248B25939EDE008BE835 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		AD61248E2593A7E1008BE835 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				AD61248B25939EDE008BE835 /* LandmarkRow.swift */,
 				AD61248E2593A7E1008BE835 /* LandmarkList.swift */,
 				AD6124912593A9E0008BE835 /* LandmarkDetail.swift */,
+				AD5551F02593FE0800507423 /* LandmarkNew.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				AD6124CE2593F3A7008BE835 /* ProfileHost.swift */,
 				AD6124D12593F404008BE835 /* ProfileSummary.swift */,
+				AD5551ED2593FCFC00507423 /* ProfileEditor.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				AD61248F2593A7E1008BE835 /* LandmarkList.swift in Sources */,
 				AD6124C52593E8B8008BE835 /* CategoryRows.swift in Sources */,
 				AD6124D22593F404008BE835 /* ProfileSummary.swift in Sources */,
+				AD5551EE2593FCFC00507423 /* ProfileEditor.swift in Sources */,
+				AD5551F12593FE0800507423 /* LandmarkNew.swift in Sources */,
 				AD6124C82593EB1A008BE835 /* CategoryItem.swift in Sources */,
 				AD6124922593A9E0008BE835 /* LandmarkDetail.swift in Sources */,
 				AD6124A62593DC57008BE835 /* BadgeSymbol.swift in Sources */,
