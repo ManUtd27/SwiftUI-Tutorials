@@ -86,7 +86,7 @@
         "state": "Montana",
         "id": 1006,
         "isFeatured": false,
-        "isFavorite": false,
+        "isFavorite": true,
         "park": "Glacier National Park",
         "coordinates": {
             "longitude": -113.934831,
