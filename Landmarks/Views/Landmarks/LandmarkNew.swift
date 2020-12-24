@@ -17,7 +17,6 @@ struct LandmarkNew: View {
     @State var description: String = ""
     @State var latitude: String = ""
     @State var longitude: String = ""
-    @State var isShowingMapModal = false
     
     
     var body: some View {
@@ -47,38 +46,6 @@ struct LandmarkNew: View {
                 }
                 
                 Section(header: Text("Location")){
-                    HStack {
-                        Image("maps-icon")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
-                            .frame(width: 52.0, height: 52.0)
-                            .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                                self.isShowingMapModal.toggle()
-                            })
-                            .sheet(isPresented: $isShowingMapModal, content: {
-                                ZStack {
-                                    LandmarkMapSelectionView()
-                                    VStack {
-                                        HStack {
-                                            Spacer()
-                                            Image(systemName: "xmark")
-                                                .frame(width: 36, height: 36)
-                                                .foregroundColor(.white)
-                                                .background(Color.black)
-                                                .clipShape(Circle())
-                                        }
-                                        Spacer()
-                                    }
-                                    .offset(x: -16, y: 16)
-                                    .onTapGesture {
-                                        self.isShowingMapModal = false
-                                    }
-                                }
-                            })
-                        
-                        Divider()
                         VStack {
                             HStack {
                                 Text("Latitude").bold()
@@ -91,7 +58,6 @@ struct LandmarkNew: View {
                                 TextField("Longitude", text: $longitude)
                             }
                         }
-                    }
                 }
                 
                 Section{
