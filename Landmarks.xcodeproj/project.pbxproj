@@ -41,6 +41,7 @@
 		AD6CF2462593926000DADCEF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF2452593926000DADCEF /* MapView.swift */; };
 		AD6CF24925939ACF00DADCEF /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF24825939ACF00DADCEF /* landmarkData.json */; };
 		AD6CF24D25939B8200DADCEF /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF24C25939B8200DADCEF /* Landmark.swift */; };
+		ADB86CFF2594361600720509 /* LandmarkMapSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB86CFE2594361600720509 /* LandmarkMapSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		AD6CF2452593926000DADCEF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AD6CF24825939ACF00DADCEF /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		AD6CF24C25939B8200DADCEF /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		ADB86CFE2594361600720509 /* LandmarkMapSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkMapSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				AD61248E2593A7E1008BE835 /* LandmarkList.swift */,
 				AD6124912593A9E0008BE835 /* LandmarkDetail.swift */,
 				AD5551F02593FE0800507423 /* LandmarkNew.swift */,
+				ADB86CFE2594361600720509 /* LandmarkMapSelectionView.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				AD6124BE2593DFCA008BE835 /* HikeView.swift in Sources */,
 				AD61248C25939EDE008BE835 /* LandmarkRow.swift in Sources */,
 				AD61249D2593CAB9008BE835 /* SearchBar.swift in Sources */,
+				ADB86CFF2594361600720509 /* LandmarkMapSelectionView.swift in Sources */,
 				AD61248925939DBD008BE835 /* ModelData.swift in Sources */,
 				AD6124BD2593DFCA008BE835 /* HikeDetail.swift in Sources */,
 			);

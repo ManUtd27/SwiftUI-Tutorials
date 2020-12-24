@@ -58,8 +58,23 @@ struct LandmarkNew: View {
                                 self.isShowingMapModal.toggle()
                             })
                             .sheet(isPresented: $isShowingMapModal, content: {
-                                VStack {
-                                    Text("Map View")
+                                ZStack {
+                                    LandmarkMapSelectionView()
+                                    VStack {
+                                        HStack {
+                                            Spacer()
+                                            Image(systemName: "xmark")
+                                                .frame(width: 36, height: 36)
+                                                .foregroundColor(.white)
+                                                .background(Color.black)
+                                                .clipShape(Circle())
+                                        }
+                                        Spacer()
+                                    }
+                                    .offset(x: -16, y: 16)
+                                    .onTapGesture {
+                                        self.isShowingMapModal = false
+                                    }
                                 }
                             })
                         
